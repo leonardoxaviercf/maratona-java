@@ -3,7 +3,7 @@ package xavier.maratonajava.introducao;
 /**
  * Isso é um comentário <strong>JavaDoc</strong>
  */
-public class MinhaClasse {
+public class Aula001MinhaClasse {
     public static void main(String[] args) {
         // Isso é um comentário de linha
         /*
