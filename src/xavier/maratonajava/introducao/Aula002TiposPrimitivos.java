@@ -12,11 +12,13 @@ public class Aula002TiposPrimitivos {
         boolean falso = false;
         char caractere = 'L';
 
+        // Posso armazenar grandes valores de texto
+        String nome = "Leonardo";
+
         // Os valores de armazenamento (em quantidade de bits) estão docs
 
         // Posso "forçar" uma variável a caber dentro da outra
         int idadeGrande = (int) 10000000000L;
-
         System.out.println("Idade: "+ idade+" anos.");
         System.out.println("Capacidade máxima da idade grande: "+idadeGrande);
         System.out.println(numeroGrande);
@@ -27,5 +29,6 @@ public class Aula002TiposPrimitivos {
         System.out.println(verdadeiro);
         System.out.println(falso);
         System.out.println(caractere);
+        System.out.println("Nome: "+nome);
     }
 }
