@@ -9,7 +9,7 @@ public class Aula006EstruturasDeRepeticao04 {
         // Esse código funciona normalmente, mas tem uma maneira mais clean de resolver esse problema
 //        for (int parcela = 1; parcela <= valorTotal; parcela++) {
 //            double valorDaParcela = valorTotal / parcela;
-//            if (valorDaParcela >= 1000) {
+//            if (valorDaParcela    >= 1000) {
 //                System.out.println("Parcela: " + parcela + " R$" + valorDaParcela);
 //            } else {
 //                break;
