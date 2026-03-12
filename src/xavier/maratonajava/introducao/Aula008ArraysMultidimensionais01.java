@@ -25,5 +25,23 @@ public class Aula008ArraysMultidimensionais01 {
                 System.out.println(dias[i][j]);
             }
         }
+
+        System.out.println("Fim da iteração");
+
+        dias[0][0] = 1;
+        dias[0][1] = 2;
+        dias[0][2] = 3;
+        dias[1][0] = 4;
+        dias[1][1] = 5;
+        dias[1][2] = 6;
+        dias[2][0] = 7;
+        dias[2][1] = 8;
+        dias[2][2] = 9;
+
+        for (int[] arrayBase : dias) {
+            for (int dia : arrayBase) {
+                System.out.println(dia);
+            }
+        }
     }
 }
