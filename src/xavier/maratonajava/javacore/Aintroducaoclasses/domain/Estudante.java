@@ -6,4 +6,8 @@ public class Estudante {
     // Porém tem que ter cuidado ao usar essa opção, pois agora todos os objetos criados terão o nome = 'Leonardo'
     public int idade;
     public char sexo;
+    // Isso aqui é sobre coesão no docs
+//    public String nomeProfessor;
+//    public int idadeProfessor;
+//    public char sexoProfessor;
 }
