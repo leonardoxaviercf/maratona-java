@@ -1,9 +1,10 @@
 package xavier.maratonajava.javacore.Bintroducaometodos.domain;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salarios;
+    private String nome;
+    private int idade;
+    private double[] salarios;
+    private double media;
 
     public void imprimirDados(){
         System.out.println("Nome: " + this.nome);
@@ -29,8 +30,41 @@ public class Funcionario {
             soma += salarioDoMes;
         }
 
-        double media = soma / this.salarios.length;
+        this.media = soma / this.salarios.length;
 
-        System.out.println("Média dos salários: " + media);
+        System.out.println("Média dos salários: " + this.media);
+    }
+
+    // Setters
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    // Por questões de segurança de código, o setMedia não existe, pois a média poderia ser alterada
+    // e manipulada dentro do código, não resultando na média real
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+    // Getters
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public double[] getSalarios() {
+        return salarios;
+    }
+
+    public double getMedia() {
+        return media;
     }
 }
