@@ -46,4 +46,22 @@ public class Calculadora {
         System.out.println("Num1: " + numero1);
         System.out.println("Num2: " + numero2);
     }
+
+    public void somaArray(double[] numeros){
+        double soma = 0;
+        for (double numero : numeros) {
+            soma +=  numero;
+        }
+
+        System.out.println("Soma te todos os números: " + soma);
+    }
+
+    public void somaVarArgs(double... numeros){
+        double soma = 0;
+        for (double numero : numeros) {
+            soma +=  numero;
+        }
+
+        System.out.println("Soma te todos os números: " + soma);
+    }
 }
