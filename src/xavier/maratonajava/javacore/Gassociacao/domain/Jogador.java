@@ -2,9 +2,15 @@ package xavier.maratonajava.javacore.Gassociacao.domain;
 
 public class Jogador {
     private String nome;
+    private Time time;
 
     public void imprime() {
+        System.out.println("----------");
         System.out.println(this.nome);
+        if (time != null) {
+            System.out.println(time.getNome());
+        }
+        System.out.println("----------");
     }
 
     public Jogador(String nome) {
@@ -17,5 +23,13 @@ public class Jogador {
 
     public String getNome() {
         return this.nome;
+    }
+
+    public void setTime(Time time) {
+        this.time = time;
+    }
+
+    public Time getTime() {
+        return this.time;
     }
 }
