@@ -5,12 +5,12 @@ public class Jogador {
     private Time time;
 
     public void imprime() {
-        System.out.println("----------");
-        System.out.println(this.nome);
+        System.out.println("--------------");
+        System.out.println("Nome: " + this.nome);
         if (time != null) {
-            System.out.println(time.getNome());
+            System.out.println("Time: " + time.getNome());
         }
-        System.out.println("----------");
+        System.out.println("--------------");
     }
 
     public Jogador(String nome) {
