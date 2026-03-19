@@ -5,11 +5,15 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
 
-//    public Pessoa(String nome, String cpf, Endereco endereco) {
-//        this.nome = nome;
-//        this.cpf = cpf;
-//        this.endereco = endereco;
-//    }
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
+    public Pessoa(String nome, String cpf, Endereco endereco) {
+        this(nome);
+        this.cpf = cpf;
+        this.endereco = endereco;
+    }
 
     public void imprimir(){
         System.out.println("Nome: " + this.nome);
