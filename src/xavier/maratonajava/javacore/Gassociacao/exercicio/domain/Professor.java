@@ -10,16 +10,24 @@ public class Professor {
         this.especialidade = especialidade;
     }
 
+    public Professor(String nome, String especialidade, Seminario[] seminarios) {
+        this.nome = nome;
+        this.especialidade = especialidade;
+        this.seminarios = seminarios;
+    }
+
     public void imprimir() {
+        System.out.println("-----------");
         System.out.println("Nome: " + nome);
         System.out.println("Especialidade: " + especialidade);
         if (seminarios != null) {
             for (Seminario seminario : seminarios) {
-                System.out.println("Seminario: " + seminario);
+                System.out.println("Seminario: " + seminario.getTitulo());
             }
         } else  {
             System.out.println("Esse professor não está em nenhum seminário.");
         }
+        System.out.println("-----------");
     }
 
     public void setNome(String nome) {

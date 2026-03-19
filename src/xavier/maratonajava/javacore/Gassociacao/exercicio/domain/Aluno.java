@@ -3,14 +3,14 @@ package xavier.maratonajava.javacore.Gassociacao.exercicio.domain;
 public class Aluno {
     private String nome;
     private int idade;
-    private String seminario;
+    private Seminario seminario;
 
     public Aluno(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
     }
 
-    public Aluno(String nome, int idade, String seminario) {
+    public Aluno(String nome, int idade, Seminario seminario) {
         this.nome = nome;
         this.idade = idade;
         this.seminario = seminario;
@@ -22,7 +22,7 @@ public class Aluno {
         System.out.println("Idade: " + idade);
 
         if (seminario != null) {
-            System.out.println("Seminario: " + seminario);
+            System.out.println("Seminario: " + seminario.getTitulo());
         }
         System.out.println("---------------");
     }
@@ -43,11 +43,11 @@ public class Aluno {
         return this.idade;
     }
 
-    public void setSeminario(String seminario) {
+    public void setSeminario(Seminario seminario) {
         this.seminario = seminario;
     }
 
-    public String getSeminario() {
+    public Seminario getSeminario() {
         return this.seminario;
     }
 
