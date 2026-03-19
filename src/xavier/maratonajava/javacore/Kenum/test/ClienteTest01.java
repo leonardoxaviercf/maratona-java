@@ -21,5 +21,10 @@ public class ClienteTest01 {
         System.out.println(TipoPagamento.CREDITO.calcularValorPagamento(100));
         System.out.println(TipoPagamento.ESPECIE.calcularValorPagamento(100));
 
+//        TipoCliente tipoCliente = TipoCliente.valueOf("Pessoa Fisica");
+//        System.out.println(tipoCliente.getNomeRelatorio());
+
+        TipoCliente tipoCliente2 = TipoCliente.tipoClientePorNomeRelatorio("Pessoa Fisica");
+        System.out.println(tipoCliente2);
     }
 }
