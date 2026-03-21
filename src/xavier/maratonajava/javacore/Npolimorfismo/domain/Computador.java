@@ -7,7 +7,7 @@ public class Computador extends Produto {
     }
 
     @Override
-    public double calcularImposto() {
+    public double calcularImposto()  {
         System.out.println("Calculando imposto do computador");
         return this.preco * IMPOSTO_POR_CENTO;
     }
