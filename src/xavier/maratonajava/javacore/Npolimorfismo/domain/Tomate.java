@@ -5,10 +5,15 @@ public class Tomate extends Produto {
     public Tomate(String nome, double preco) {
         super(nome, preco);
     }
+    private String dataValidade;
 
     @Override
     public double calcularImposto() {
         System.out.println("Calculando imposto do tomate");
         return this.preco * IMPOSTO_POR_CENTO;
+    }
+
+    public String getDataValidade() {
+        return dataValidade;
     }
 }
