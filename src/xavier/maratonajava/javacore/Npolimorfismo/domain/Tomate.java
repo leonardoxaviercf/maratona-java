@@ -14,6 +14,10 @@ public class Tomate extends Produto {
     }
 
     public String getDataValidade() {
-        return dataValidade;
+        return this.dataValidade;
+    }
+
+    public void setDataValidade(String dataValidade) {
+        this.dataValidade = dataValidade;
     }
 }
