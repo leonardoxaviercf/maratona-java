@@ -19,10 +19,9 @@ public class RuntimeExceptionTest04 {
 
         try {
             talvezLanceExcecao();
-        } catch (SQLException e) {
+        } catch (SQLException | FileNotFoundException e) {
             System.out.println("Erro ao executar o SQLException");
-        } catch (FileNotFoundException e) {
-            System.out.println("Erro ao executar o FileNotFoundException");
+            e.printStackTrace();
         }
     }
 
