@@ -1,0 +1,31 @@
+package xavier.maratonajava.javacore.Wnio.test;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
+public class pathTest02 {
+    public static void main(String[] args) throws IOException {
+        Path pastaPath = Paths.get("pasta2");
+        Path subPastaPath = Paths.get("pasta/subpasta/subsubpast");
+
+        if (Files.notExists(pastaPath)) {
+            Path pastaDirectory = Files.createDirectory(pastaPath);
+        }
+
+        Path subPastaDirectory = Files.createDirectories(subPastaPath);
+
+        Path filePath = Paths.get(subPastaPath.toString(), "file.txt");
+
+        if (Files.notExists(filePath)) {
+            Path filePathCreated = Files.createFile(filePath);
+        }
+
+        // Renomear arquivos na subpasta
+        Path source = filePath;
+        Path target = Paths.get(filePath.getParent().toString(), "fileRenamed.txt");
+        Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
+    }
+}
