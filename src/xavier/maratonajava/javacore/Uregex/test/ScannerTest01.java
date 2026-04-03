@@ -1,0 +1,14 @@
+package xavier.maratonajava.javacore.Uregex.test;
+
+import java.util.Arrays;
+
+public class ScannerTest01 {
+    public static void main(String[] args) {
+        String texto = "Levi, Eren, Mikasa, true, 200";
+        String[] nomes = texto.split(",");
+//        System.out.println(Arrays.toString(nomes));
+        for (String nome : nomes) {
+            System.out.println(nome.trim());
+        }
+    }
+}
