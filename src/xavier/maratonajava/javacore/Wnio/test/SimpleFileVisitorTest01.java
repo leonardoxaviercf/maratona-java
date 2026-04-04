@@ -11,7 +11,7 @@ public class SimpleFileVisitorTest01 {
     }
 }
 
-class ListAllFiles extends SimpleFileVisitor<Path> {
+class ListJavaFiles extends SimpleFileVisitor<Path> {
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs){
         if (file.getFileName().toString().endsWith(".java")) {
