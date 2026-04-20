@@ -13,7 +13,6 @@ public class WildcardTest02 {
         printConsulta(cats);
 
         printConsultaAnimal(animals);
-        printConsultaAnimal(dogs);
     }
 
     private static void printConsulta(List<? extends Animal> animals) {
@@ -23,8 +22,7 @@ public class WildcardTest02 {
     }
 
     private static void printConsultaAnimal(List<? super Animal> animals) {
-            animals.add(new Dog());
-            animals.add(new Cat());
-        }
+        animals.add(new Dog());
+        animals.add(new Cat());
     }
 }
