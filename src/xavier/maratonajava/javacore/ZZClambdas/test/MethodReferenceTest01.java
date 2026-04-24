@@ -8,6 +8,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+// Reference to a static method
 public class MethodReferenceTest01 {
     public static void main(String[] args) {
         List<Anime> animes = new ArrayList<>(List.of(new Anime("DBZ", 283), new Anime("Naruto", 412), new Anime("NNTS", 107)));
