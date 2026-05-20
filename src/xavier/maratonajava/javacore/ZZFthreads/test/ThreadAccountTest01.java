@@ -28,6 +28,11 @@ public class ThreadAccountTest01 implements Runnable {
         if (account.getBalance() >= amount){
             System.out.println(Thread.currentThread().getName() + " está indo sacar dinheiro");
             account.withdrawal(amount);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println(Thread.currentThread().getName() + " completou o saque, valor atual da conta: " + account.getBalance());
         } else {
             System.out.println("Sem dinheiro suficiente para " + Thread.currentThread().getName() + " efetuar o saque " + account.getBalance());
