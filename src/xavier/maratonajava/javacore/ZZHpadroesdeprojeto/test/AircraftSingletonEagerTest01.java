@@ -1,0 +1,17 @@
+package xavier.maratonajava.javacore.ZZHpadroesdeprojeto.test;
+
+import xavier.maratonajava.javacore.ZZHpadroesdeprojeto.domain.Aircraft;
+import xavier.maratonajava.javacore.ZZHpadroesdeprojeto.domain.AircraftSingletonEager;
+
+public class AircraftSingletonEagerTest01 {
+    public static void main(String[] args) {
+        bookSeat("1A");
+        bookSeat("1A");
+    }
+
+    private static void bookSeat(String seat) {
+        System.out.println(AircraftSingletonEager.getINSTANCE());
+        AircraftSingletonEager aircraft = AircraftSingletonEager.getINSTANCE();
+        System.out.println(String.valueOf(aircraft.bookSeat(seat)));
+    }
+}
